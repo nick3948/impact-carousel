@@ -21,8 +21,9 @@ header h1 {
 .carousel-track {
     display: flex;
     gap: 16px;
-    animation: scroll 20s linear infinite;
-}
+    padding-right: 27px;
+    padding-left: 27px;
+} 
 
 .card {
     flex: 0 0 auto;
@@ -42,18 +43,4 @@ header h1 {
     padding: 10px;
     text-align: center;
     border-radius: 0 0 10px 10px;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-.carousel:hover .carousel-track {
-    animation-play-state: paused;
 }
