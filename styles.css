@@ -29,7 +29,7 @@ header h1 {
     flex: 0 0 auto;
     width: 550px;
     height: 500px;
-    background: url('assets/image1.jpg') center/cover no-repeat;
+    background: url('image1.jpg') center/cover no-repeat;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -43,4 +43,23 @@ header h1 {
     padding: 10px;
     text-align: center;
     border-radius: 0 0 10px 10px;
+}
+
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+  }
 }
