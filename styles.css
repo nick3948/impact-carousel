@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 16px;
+  scroll-behavior: smooth;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 200px;
+  background: url('assets/image1.jpg') center/cover no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-content {
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
