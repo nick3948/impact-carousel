@@ -1,47 +1,59 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: sans-serif;
-  background-color: #f0f0f0;
-  padding: 20px;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 header h1 {
-  text-align: center;
-  margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .carousel {
-  position: relative;
-  width: 100%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
 }
 
 .carousel-track {
-  display: flex;
-  gap: 16px;
-  scroll-behavior: smooth;
+    display: flex;
+    gap: 16px;
+    animation: scroll 20s linear infinite;
 }
 
 .card {
-  flex: 0 0 auto;
-  width: 300px;
-  height: 200px;
-  background: url('assets/image1.jpg') center/cover no-repeat;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: flex-end;
+    flex: 0 0 auto;
+    width: 550px;
+    height: 500px;
+    background: url('assets/image1.jpg') center/cover no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: flex-end;
 }
 
 .card-content {
-  background: rgba(0,0,0,0.5);
-  color: #fff;
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  border-radius: 0 0 10px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel:hover .carousel-track {
+    animation-play-state: paused;
 }
