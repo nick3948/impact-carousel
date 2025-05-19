@@ -27,7 +27,7 @@ header h1 {
 
 .card {
     flex: 0 0 auto;
-    width: 550px;
+    width: 33.3333vw;
     height: 500px;
     background: url('/Image1.jpg') center/cover no-repeat;
     border-radius: 10px;
@@ -52,14 +52,14 @@ header h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .card {
-    width: 300px;
+    width: 50vw;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .card {
-    width: 90%;
+    width: 100vw;
   }
 }
