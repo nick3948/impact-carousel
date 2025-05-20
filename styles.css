@@ -1,9 +1,8 @@
 body {
-    font-family: sans-serif;
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin: 0;
-    padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at center, #8fb1c0 30%, #ffffff 80%);
+  margin: 0;
+  padding: 0;
 }
 
 header h1 {
@@ -21,8 +20,6 @@ header h1 {
 .carousel-track {
     display: flex;
     gap: 16px;
-    padding-right: 27px;
-    padding-left: 27px;
 } 
 
 .card {
@@ -34,6 +31,7 @@ header h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: flex-end;
+    cursor: pointer;
 }
 
 .card-content {
@@ -50,6 +48,34 @@ header h1 {
     transform: scale(1.03);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.card.focused {
+  outline: 3px solid #007BFF;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
 }
 
 @media (max-width: 1024px) {
